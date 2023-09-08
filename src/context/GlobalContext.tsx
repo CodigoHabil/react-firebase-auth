@@ -1,7 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import { useAuthState } from "../hooks/authHooks";
 
-export const GlobalContext = createContext({user: {}});
+export const GlobalContext = createContext({user: []});
 
 export const GlobalProvider = ({ children }) => {
   const [user, loading, error] = useAuthState()
